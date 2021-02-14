@@ -13,21 +13,27 @@
     <header class="header">
       <div class="container container_header">
         <a class="header__link page-link" href="#">
-          <img src="./images/Logo.svg" alt="logo">
+          <div class="header__logo"></div>
         </a>
-        <nav>
+        <nav class="header__nav">
           <ul>
-            <li>
+            <li class="header__item">
               <a class="page-link" href="#">Agenda</a>
             </li>
-            <li>
+            <li class="header__item">
               <a class="page-link" href="#">Tickets</a>
             </li>
-            <li>
+            <li class="header__item">
               <a class="page-link" href="#">team</a>
             </li>
           </ul>
         </nav>
+        <div class="navbar page-link"></div>
+        <div class="menu">
+            <a class="manu__item page-link" href="#">Agenda</a>
+            <a class="manu__item page-link" href="#">Tickets</a>
+            <a class="manu__item page-link" href="#">team</a>
+        </div>
       </div>
     </header>
 
@@ -37,10 +43,13 @@
         Worldwide Software Architecture Summit
       </h2>
       <img src="./images/skulp.svg" alt="monument" class="booking__background">
-      <p class="booking__subtitle">Dive into</p>
-      <p class="booking__text">Cloud Architecture Optimization:</p>
-      <p class="booking__text booking__text_green">Automation&Testing</p>
-      <button class="button button_booking page-link">buy ticket</button>
+      
+      <div class="booking__content">
+        <p class="booking__subtitle">Dive into</p>
+        <p class="booking__text">Cloud Architecture Optimization:</p>
+        <p class="booking__text booking__text_green">Automation&Testing</p>
+        <button class="button button_booking page-link">buy ticket</button>
+      </div>
       <div class="booking__time">
         <p>ONLINE, JANUARY 26-27. DURATION: 10:00-19:00</p>
       </div>
@@ -62,6 +71,11 @@
           <div class="flex__item"><a>CST (Central Standard Time)</a></div>
           <div class="flex__item"><a>Vendor track</a></div>
         </div>
+        <select class="list">
+          <option class="list__item">CET (Central European Time)</option>
+          <option class="list__item">CST (Central Standard Time)</option>
+          <option class="list__item">Vendor track</option>
+        </select>
       </div>
       <div class="timetable-container">
         <div class="timetable__title-block timetable__title-block_absolute"><h4 class="timetable__title">NFR – Non-functional requirenment</h4></div>
@@ -79,11 +93,11 @@
                     <p class="timetable__time">10:10 — 10:40</p>
                     <p class="timetable__author">Alexander Kuttig</p>
                   </div>
-                  <p class="timetable__quote">"Using AWS and Google Cloud in a cost-efficient way"</p>
+                  <img src="./images/MaskGroup.svg" alt="" class="timetable__icon">
                 </div>
                 <img class="timetable__photo" src="./images/AlexanderKuttig1.svg" alt="">
                 <div class="timetable__block">
-                  <img src="./images/MaskGroup.svg" alt="" class="timetable__icon">
+                  <p class="timetable__quote">"Using AWS and Google Cloud in a cost-efficient way"</p>
                   <div class="timetable__buttons">
                     <button class="button timetable__button timetable__button_green page-link">show abstract</button>
                     <button class="button timetable__button page-link">add to calendar</button>
@@ -96,11 +110,11 @@
                     <p class="timetable__time">10:40 — 11:10</p>
                     <p class="timetable__author">Ivan Rigoni</p>
                   </div>
-                  <p class="timetable__quote">"A Million Requests in 10 minutes"</p>
+                  <img src="./images/MaskGroup(1).svg" alt="" class="timetable__icon">
                 </div>
                 <img class="timetable__photo" src="./images/AlexanderKuttig2.svg" alt="">
                 <div class="timetable__block">
-                  <img src="./images/MaskGroup(1).svg" alt="" class="timetable__icon">
+                  <p class="timetable__quote">"A Million Requests in 10 minutes"</p>
                   <div class="timetable__buttons">
                     <button class="button timetable__button timetable__button_green page-link">show abstract</button>
                     <button class="button timetable__button page-link">add to calendar</button>
@@ -108,16 +122,17 @@
                 </div>
               </article>
               <article class="timetable__item">
+                
                 <div class="timetable__info">
                   <div class="timetable__wrapper">
                     <p class="timetable__time">11:10 — 11:40</p>
                     <p class="timetable__author">Rohit Bhardwaj</p>
                   </div>
-                  <p class="timetable__quote">"Resilient Cloud Architecture Design Patterns"</p>
+                  <img src="./images/MaskGroup(2).svg" alt="" class="timetable__icon">
                 </div>
                 <img class="timetable__photo" src="./images/AlexanderKuttig3.svg" alt="">
                 <div class="timetable__block">
-                  <img src="./images/MaskGroup(2).svg" alt="" class="timetable__icon">
+                  <p class="timetable__quote">"Resilient Cloud Architecture Design Patterns"</p>
                   <div class="timetable__buttons">
                     <button class="button timetable__button timetable__button_green page-link">show abstract</button>
                     <button class="button timetable__button page-link">add to calendar</button>
@@ -140,16 +155,17 @@
             <div class="timetable__title-block"><h4 class="timetable__title">NFR – Non-functional requirenment</h4></div>
             <div class="timetable__container">
               <article class="timetable__item">
+                
                 <div class="timetable__info">
                   <div class="timetable__wrapper">
                     <p class="timetable__time">10:20 — 10:50</p>
                     <p class="timetable__author">Heidi Waterhouse</p>
                   </div>
-                  <p class="timetable__quote">"Breaking Strain: A story about capacities and testing"</p>
+                  <img src="./images/MaskGroup.svg" alt="" class="timetable__icon">
                 </div>
                 <img class="timetable__photo" src="./images/AlexanderKuttig4.svg" alt="">
                 <div class="timetable__block">
-                  <img src="./images/MaskGroup.svg" alt="" class="timetable__icon">
+                  <p class="timetable__quote">"Breaking Strain: A story about capacities and testing"</p>
                   <div class="timetable__buttons">
                     <button class="button timetable__button timetable__button_green page-link">show abstract</button>
                     <button class="button timetable__button page-link">add to calendar</button>
@@ -157,16 +173,17 @@
                 </div>
               </article>
               <article class="timetable__item">
+                
                 <div class="timetable__info">
                   <div class="timetable__wrapper">
                     <p class="timetable__time">10:50 — 11:20</p>
                     <p class="timetable__author">Emma Thomas</p>
                   </div>
-                  <p class="timetable__quote">"But we wanted our solution to transmit data faster than the speed of light"</p>
+                  <img src="./images/MaskGroup3.svg" alt="" class="timetable__icon">
                 </div>
                 <img class="timetable__photo" src="./images/AlexanderKuttig5.svg" alt="">
                 <div class="timetable__block">
-                  <img src="./images/MaskGroup3.svg" alt="" class="timetable__icon">
+                  <p class="timetable__quote">"But we wanted our solution to transmit data faster than the speed of light"</p>
                   <div class="timetable__buttons">
                     <button class="button timetable__button timetable__button_green page-link">show abstract</button>
                     <button class="button timetable__button page-link">add to calendar</button>
@@ -174,16 +191,17 @@
                 </div>
               </article>
               <article class="timetable__item">
+                
                 <div class="timetable__info">
                   <div class="timetable__wrapper">
                     <p class="timetable__time">11:10 — 11:40</p>
                     <p class="timetable__author">Michael Ritchson</p>
                   </div>
-                  <p class="timetable__quote">"Apache Tomee, a successful open source migration journey for NASA"</p>
+                  <img src="./images/MaskGroup4.svg" alt="" class="timetable__icon">
                 </div>
                 <img class="timetable__photo" src="./images/AlexanderKuttig6.svg" alt="">
                 <div class="timetable__block">
-                  <img src="./images/MaskGroup4.svg" alt="" class="timetable__icon">
+                  <p class="timetable__quote">"Apache Tomee, a successful open source migration journey for NASA"</p>
                   <div class="timetable__buttons">
                     <button class="button timetable__button timetable__button_green page-link">show abstract</button>
                     <button class="button timetable__button page-link">add to calendar</button>
@@ -202,6 +220,6 @@
 
   </main>
   
-  
+  <script src="./index.js"></script>
 </body>
 </html>
